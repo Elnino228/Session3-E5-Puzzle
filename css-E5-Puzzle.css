@@ -1,0 +1,13 @@
+.img {
+    width: 300px;
+    height: 80px;
+}
+
+#result {
+    color: red;
+    font-weight: bold;
+    font-size: 40px;
+}
+#aa {
+    font-size: 20px;
+}
