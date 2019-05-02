@@ -62,14 +62,8 @@
                 } else {
                     img1.src = img1_lk1;
                 }
-                src12345 = img1.src + img2.src + img3.src + img4.src + img5.src;
-                done = imgExactly1 == src12345 || imgExactly2 == src12345 || imgExactly3 == src12345;
-                if (done) {
-                    document.getElementById('result').innerHTML="Exactly. Congratulation!";
-                } else {
-                    document.getElementById('result').innerHTML="";
-                }
                 break;
+
             case 'img2':
                 //change image 2
                 if (img2.src == img2_lk3) {
@@ -78,13 +72,6 @@
                     img2.src = img2_lk3;
                 } else {
                     img2.src = img2_lk1;
-                }
-                src12345 = img1.src + img2.src + img3.src + img4.src  + img5.src;
-                done = imgExactly1 == src12345 || imgExactly2 == src12345 || imgExactly3 == src12345;
-                if (done) {
-                    document.getElementById('result').innerHTML="Exactly. Congratulation!";
-                }else {
-                    document.getElementById('result').innerHTML="";
                 }
                 break;
             case 'img3':
@@ -96,13 +83,6 @@
                 } else {
                     img3.src = img3_lk1;
                 }
-                src12345 = img1.src + img2.src + img3.src + img4.src  + img5.src;
-                done = imgExactly1 == src12345 || imgExactly2 == src12345 || imgExactly3 == src12345;
-                if (done) {
-                    document.getElementById('result').innerHTML="Exactly. Congratulation!";
-                }else {
-                    document.getElementById('result').innerHTML="";
-                }
                 break;
             case 'img4':
                 //change image 4
@@ -112,13 +92,6 @@
                     img4.src = img4_lk2;
                 } else {
                     img4.src = img4_lk3;
-                }
-                src12345 = img1.src + img2.src + img3.src + img4.src + img5.src;
-                done = imgExactly1 == src12345 || imgExactly2 == src12345 || imgExactly3 == src12345;
-                if (done) {
-                    document.getElementById('result').innerHTML="Exactly. Congratulation!";
-                }else {
-                    document.getElementById('result').innerHTML="";
                 }
                 break;
             case 'img5':
@@ -130,17 +103,16 @@
                 } else {
                     img5.src = img5_lk1;
                 }
-                src12345 = img1.src + img2.src + img3.src + img4.src  + img5.src;
-                done = imgExactly1 == src12345 || imgExactly2 == src12345 || imgExactly3 == src12345;
-                if (done) {
-                    document.getElementById('result').innerHTML="Exactly. Congratulation!";
-                }else {
-                    document.getElementById('result').innerHTML="";
-                }
                 break;
         }
 
-
+        src12345 = img1.src + img2.src + img3.src + img4.src  + img5.src;
+        done = imgExactly1 == src12345 || imgExactly2 == src12345 || imgExactly3 == src12345;
+        if (done) {
+            document.getElementById('result').innerHTML="Exactly. Congratulation!";
+        }else {
+            document.getElementById('result').innerHTML="";
+        }
     }
 </script>
 </body>
